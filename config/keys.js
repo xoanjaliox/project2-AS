@@ -3,3 +3,4 @@ dbPassword = 'mongodb+srv://anjali123:anjali123@cluster0-uwax2.mongodb.net/test?
 module.exports = {
     mongoURI: dbPassword
 };
+ 

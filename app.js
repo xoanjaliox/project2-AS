@@ -7,6 +7,8 @@ const session = require('express-session');
 
 const app = express();
 
+app.use(express.static('public'));
+
 // Passport Config
 require('./config/passport')(passport);
 
@@ -52,6 +54,7 @@ app.use(function(req, res, next) {
   res.locals.error = req.flash('error');
   next();
 });
+
 
 // Routes
 app.use('/', require('./routes/index.js'));
