@@ -81,6 +81,32 @@ p {
 
 /* ========================== REGISTER EJS CSS ========================== */
 
+h1 {
+    font-family: 'NowExtraLight';
+}
+
+.alert-warning {
+    color: #46185f;
+    background-color: #e9ea77;
+    border-color: none;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.form-group .form-control {
+    margin: 0 auto;
+    width: 250px;
+}
+
+.lead a {
+    color: #46185f;
+}
+
+.lead a:hover {
+    text-decoration: underline; 
+}
+
 
 /* ========================== SIGN UP MODAL CSS ========================== */
 

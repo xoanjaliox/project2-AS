@@ -6,7 +6,7 @@
   <div class="col-md-6 m-auto">
     <div class="card card-body">
       <h1 class="text-center mb-3">
-        <i class="fas fa-user-plus"></i> Register
+         Register
       </h1>
       <% include ./partials/messages %>
       <form action="/users/register" method="POST">
@@ -17,7 +17,7 @@
             id="name"
             name="name"
             class="form-control"
-            placeholder="Enter Name"
+            placeholder=""
             value="<%= typeof name != 'undefined' ? name : '' %>"
           />
         </div>
@@ -28,7 +28,7 @@
             id="email"
             name="email"
             class="form-control"
-            placeholder="Enter Email"
+            placeholder=""
             value="<%= typeof email != 'undefined' ? email : '' %>"
           />
         </div>
@@ -39,7 +39,7 @@
             id="password"
             name="password"
             class="form-control"
-            placeholder="Create Password"
+            placeholder="must be at least 6 characters"
             value="<%= typeof password != 'undefined' ? password : '' %>"
           />
         </div>
@@ -50,11 +50,11 @@
             id="password2"
             name="password2"
             class="form-control"
-            placeholder="Confirm Password"
+            placeholder=""
             value="<%= typeof password2 != 'undefined' ? password2 : '' %>"
           />
         </div>
-        <button type="submit" class="btn btn-primary btn-block">
+        <button type="submit" class="btn btn-primary btn-block register">
           Register
         </button>
       </form>

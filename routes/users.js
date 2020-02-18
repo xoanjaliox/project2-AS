@@ -43,6 +43,7 @@ router.post("/register", (req, res) => {
       password2
     });
   } else {
+    
     // Validation passed
     User.findOne({ email: email }).then(user => {
       if (user) {
